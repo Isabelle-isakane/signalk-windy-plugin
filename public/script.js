@@ -33,7 +33,9 @@ if (self.mmsi) {
     vesselId = `${self.uuid}`;
 }
 
-cog = self.navigation.courseOverGroundTrue.value * 180 / Math.PI;
+cog = self?.navigation?.courseOverGroundTrue?.value !== undefined
+  ? self.navigation.courseOverGroundTrue.value * 180 / Math.PI
+  : 0;
 
 const options = {
     key: key ? key : BUNDLED_WINDY_COM_KEY,
