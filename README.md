@@ -10,7 +10,7 @@ This plugin/webapp will plot your vessel's current position on a Windy.com weath
 
 This plugin uses the Windy.com API which requires a license key. A license key has been bundled with this plugin. However, it comes with the following restriction: 
 
-**The bundled Windy.com license key will only work with SignalK servers hosted at http://localhost or http://raspberrypi.local.**
+**The bundled Windy.com license key will only work with SignalK servers hosted at http://localhost, http://raspberrypi.local, or http://venus.local.**
 
 This is a restriction imposed by Windy.com - which require you to register all the authorized domains on your license key. If you host your SignalK server at a differnt hostname/domain, you will have to:
 
